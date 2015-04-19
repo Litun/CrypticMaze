@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\MyGame\android\build\intermediates\classes\release
+C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\release\gdx-controllers-1.5.4-2eb9a5f0e82acf546f42490bf8436deb85dca181.jar
+C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\release\gdx-controllers-android-1.5.4-2277986f150314fa31fada5448f94f32327d431c.jar
+C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\release\ashley-1.3.1-71401f2495e929e89a5c917168994411eb43a858.jar
+C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\release\box2dlights-1.3-62ba9b6f07ac2c7abcfe31f5a13409f912ca102d.jar
+C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\release\core-1.0-cc8f9e1b1564cf8f6fb93e38ef78d358b3ff3638.jar
+C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\release\gdx-box2d-1.5.4-1b90cdceb89c2a126f3af8bc74d80c5b3f458d9b.jar
+C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\release\gdx-backend-android-1.5.4-90ca298d43d83f7e05df9586cf3f5d6b91437dc6.jar
+C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\release\gdx-1.5.4-c0385ffbbdf19a3053feb6fe8da0dcbe1d191422.jar

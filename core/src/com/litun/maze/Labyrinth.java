@@ -89,6 +89,22 @@ public class Labyrinth implements Json.Serializable {
         return (storage[currentDimension][i][j] & DOWN) == DOWN;
     }
 
+    public boolean toRightNextDimention(int i, int j) {
+        return (storage[(currentDimension + 1) % dimension][i][j] & RIGHT) == RIGHT;
+    }
+
+    public boolean toLeftNextDimention(int i, int j) {
+        return (storage[(currentDimension + 1) % dimension][i][j] & LEFT) == LEFT;
+    }
+
+    public boolean toUpNextDimention(int i, int j) {
+        return (storage[(currentDimension + 1) % dimension][i][j] & UP) == UP;
+    }
+
+    public boolean toDownNextDimention(int i, int j) {
+        return (storage[(currentDimension + 1) % dimension][i][j] & DOWN) == DOWN;
+    }
+
     public void switchDimension() {
         currentDimension = (currentDimension + 1) % dimension;
     }

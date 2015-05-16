@@ -12,7 +12,7 @@ import com.litun.maze.Tiles;
 import com.litun.maze.components.MainTriangleComponent;
 import com.litun.maze.components.PositionComponent;
 import com.litun.maze.components.TextureComponent;
-import com.litun.maze.components.TileIndexComponent;
+import com.litun.maze.components.TileComponent;
 
 import java.util.LinkedList;
 
@@ -23,7 +23,7 @@ import java.util.LinkedList;
 public class MoveTilesSystem extends EntitySystem {
     Labyrinth labyrinth;
     Entity character;
-    private final Family family = Family.all(TileIndexComponent.class, PositionComponent.class, TextureComponent.class).get();
+    private final Family family = Family.all(TileComponent.class, PositionComponent.class, TextureComponent.class).get();
     boolean inProcess = false;
     ImmutableArray<Entity> tiles;
     LinkedList<MoveTask> tasks = new LinkedList<MoveTask>();
@@ -129,7 +129,7 @@ class MoveTask {
         this.tile = tile;
         position = tile.getComponent(PositionComponent.class);
         startPosition = new Vector2(position.center.x, position.center.y);
-        TileIndexComponent tileIndex = tile.getComponent(TileIndexComponent.class);
+        TileComponent tileIndex = tile.getComponent(TileComponent.class);
         targetPosition = new Vector2();
         targetPosition.add(Tiles.getPosition(tileIndex.i, tileIndex.j));
     }

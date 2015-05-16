@@ -62,7 +62,8 @@ public class RenderingSystem extends EntitySystem implements EntityListener {
                     originX, originY,
                     width, height,
                     position.scale.x, position.scale.y,
-                    MathUtils.radiansToDegrees * position.rotation);
+                    position.rotation);
+                    //MathUtils.radiansToDegrees * position.rotation);
 
         }
         batch.end();

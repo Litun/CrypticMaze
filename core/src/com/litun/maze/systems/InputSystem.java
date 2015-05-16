@@ -19,25 +19,25 @@ public class InputSystem extends EntitySystem {
         switch (key) {
             case LEFT:
                 if (engine.getSystem(CharacterSystem.class).goLeft()) {
-                    engine.getSystem(SwitchSystem.class).goLeft();
+                    engine.getSystem(SwitchSystem.class).start();
                     engine.getSystem(MoveTilesSystem.class).start();
                 }
                 break;
             case RIGHT:
                 if (engine.getSystem(CharacterSystem.class).goRight()) {
-                    engine.getSystem(SwitchSystem.class).goRight();
+                    engine.getSystem(SwitchSystem.class).start();
                     engine.getSystem(MoveTilesSystem.class).start();
                 }
                 break;
             case UP:
                 if (engine.getSystem(CharacterSystem.class).goUp()) {
-                    engine.getSystem(SwitchSystem.class).goUp();
+                    engine.getSystem(SwitchSystem.class).start();
                     engine.getSystem(MoveTilesSystem.class).start();
                 }
                 break;
             case DOWN:
                 if (engine.getSystem(CharacterSystem.class).goDown()) {
-                    engine.getSystem(SwitchSystem.class).goDown();
+                    engine.getSystem(SwitchSystem.class).start();
                     engine.getSystem(MoveTilesSystem.class).start();
                 }
                 break;

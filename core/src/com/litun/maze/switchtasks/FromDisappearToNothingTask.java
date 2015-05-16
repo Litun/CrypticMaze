@@ -16,7 +16,7 @@ public class FromDisappearToNothingTask extends SwitchTask {
         super(bridge);
         position = bridge.getComponent(PositionComponent.class);
         distance = position.scale.y / 2;
-        speed = distance*2;
+        speed = distance*4;
     }
 
     @Override

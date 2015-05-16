@@ -39,37 +39,4 @@ public class FromDisappearToAppearTask extends SwitchTask {
             }
         }
     }
-/*
-    private final PositionComponent position;
-    private float distance, speed;
-    private boolean firstPart = true;
-
-    public FromAppearToDisappearTask(Entity bridge) {
-        super(bridge);
-        position = bridge.getComponent(PositionComponent.class);
-        distance = position.scale.x * 0.4f / 2;
-        speed = distance * 4;
-    }
-
-    @Override
-    public void update(float deltaTime) {
-        if (!finished) {
-            if (firstPart) {
-                position.scale.sub(0, speed * deltaTime);
-                if (position.scale.y < 0) {
-                    bridge.getComponent(TextureComponent.class).region = Textures.tile;
-                    firstPart = false;
-                }
-            } else {
-                position.scale.add(0, speed * deltaTime);
-                if (position.scale.y > distance) {
-                    position.scale.y = distance;
-                    finished = true;
-                    bridge.getComponent(TextureComponent.class).region = null;
-                    bridge.getComponent(BridgeComponent.class).state = BridgeComponent.BridgeState.DISAPPEAR;
-                }
-            }
-        }
-    }
-    */
 }

@@ -27,6 +27,7 @@ public class FromAppearToDisappearTask extends SwitchTask {
             if (firstPart) {
                 position.scale.sub(0, speed * deltaTime);
                 if (position.scale.y < 0) {
+                    position.scale.y = 0;
                     bridge.getComponent(TextureComponent.class).region = Textures.tile;
                     firstPart = false;
                 }

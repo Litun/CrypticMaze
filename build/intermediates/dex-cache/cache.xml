@@ -9,11 +9,32 @@
         <dex dex="C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.5.6-5eee59b4137d55cb21bfc91b4e47ee9fbfe0f0ec.jar" />
     </item>
     <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-controllers-android\1.5.6\3bfc3757321cfc631eff7cd226a268b88a54ea14\gdx-controllers-android-1.5.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3bfc3757321cfc631eff7cd226a268b88a54ea14">
+        <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-controllers-android-1.5.6-3691c3a8ee410344f8fc15726fa71d731da39f81.jar" />
+    </item>
+    <item
         jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.5.6\93418008f79684e0fbe15d487c82c21b63389f18\gdx-1.5.6.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="93418008f79684e0fbe15d487c82c21b63389f18">
         <dex dex="C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\debug\gdx-1.5.6-e532cf2355f97fdb2820e68181a30f3e4407fd47.jar" />
+    </item>
+    <item
+        jar="D:\GitHub\CrypticMaze\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a26dca1bad7565ea19769c801d144c5390f14ca6">
+        <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\core-1.0-98da8de2d4ea5e2070a037e93b06091f472ff7a1.jar" />
+    </item>
+    <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.5.6\3031ab23b99fca1c102ad9fa866aeb06f938b8e2\gdx-backend-android-1.5.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3031ab23b99fca1c102ad9fa866aeb06f938b8e2">
+        <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.5.6-00d235b8e909ca779bb8682e8c628e0e451f757d.jar" />
     </item>
     <item
         jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.ashley\ashley\1.4.0\fb2f970ab2d7833e1f8927b1bc4560cba8b23c6c\ashley-1.4.0.jar"
@@ -44,6 +65,13 @@
         <dex dex="C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\debug\gdx-controllers-1.5.6-e50bd5073b526a8273a6f9bcf35a2d8c0adf224e.jar" />
     </item>
     <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.5.6\93418008f79684e0fbe15d487c82c21b63389f18\gdx-1.5.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="93418008f79684e0fbe15d487c82c21b63389f18">
+        <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-1.5.6-e532cf2355f97fdb2820e68181a30f3e4407fd47.jar" />
+    </item>
+    <item
         jar="C:\Users\user\Desktop\MyGame\core\build\libs\core-1.0.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -51,11 +79,39 @@
         <dex dex="C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\debug\core-1.0-cc8f9e1b1564cf8f6fb93e38ef78d358b3ff3638.jar" />
     </item>
     <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-controllers\1.5.6\be5fd0a5f5ee116bf536ba103f85de165036aaaa\gdx-controllers-1.5.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="be5fd0a5f5ee116bf536ba103f85de165036aaaa">
+        <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-controllers-1.5.6-e50bd5073b526a8273a6f9bcf35a2d8c0adf224e.jar" />
+    </item>
+    <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.5.6\7587cece665b8bbcc8e02171a77cb47a2bf0b155\gdx-box2d-1.5.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7587cece665b8bbcc8e02171a77cb47a2bf0b155">
+        <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.5.6-5eee59b4137d55cb21bfc91b4e47ee9fbfe0f0ec.jar" />
+    </item>
+    <item
         jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.5.6\3031ab23b99fca1c102ad9fa866aeb06f938b8e2\gdx-backend-android-1.5.6.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="3031ab23b99fca1c102ad9fa866aeb06f938b8e2">
         <dex dex="C:\Users\user\Desktop\MyGame\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.5.6-00d235b8e909ca779bb8682e8c628e0e451f757d.jar" />
+    </item>
+    <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.box2dlights\box2dlights\1.3\e829c3543ab5a6b3ff818615a8620024f6a14fe0\box2dlights-1.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e829c3543ab5a6b3ff818615a8620024f6a14fe0">
+        <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\box2dlights-1.3-62ba9b6f07ac2c7abcfe31f5a13409f912ca102d.jar" />
+    </item>
+    <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.badlogicgames.ashley\ashley\1.4.0\fb2f970ab2d7833e1f8927b1bc4560cba8b23c6c\ashley-1.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fb2f970ab2d7833e1f8927b1bc4560cba8b23c6c">
+        <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\ashley-1.4.0-e86509c7ed1a3627b6936664f4be2f01ea69f997.jar" />
     </item>
 
 </items>

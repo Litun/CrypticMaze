@@ -1,7 +1,13 @@
 package com.litun.maze;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
 
 /**
  * Created by user on 22.03.2015.
@@ -14,7 +20,7 @@ public class Labyrinth implements Json.Serializable {
             DOWN = 4,
             LEFT = 8;
 
-    private final byte storage[][][];
+    private byte storage[][][];
     private final int size,
             dimension;
     private int currentDimension = 0;
@@ -24,7 +30,20 @@ public class Labyrinth implements Json.Serializable {
         this.dimension = dimension;
         storage = new byte[dimension][size][size];
 
-        hardCode();
+        readFile();
+    }
+
+    private  void readFile(){
+        FileHandle file = Gdx.files.internal("maze/demo_level.maze");
+        InputStream inputStream = file.read();
+        ObjectInputStream objectInputStream = null;
+        try {
+            objectInputStream = new ObjectInputStream(inputStream);
+            storage=(byte[][][])objectInputStream.readObject();
+            objectInputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void hardCode() {

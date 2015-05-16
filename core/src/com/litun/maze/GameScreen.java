@@ -42,7 +42,7 @@ public class GameScreen extends ScreenAdapter {
         moveTilesSystem.start();
 
         Gdx.input.setInputProcessor(new GestureDetector(new MyGestureListener(engine)));
-        //Gdx.input.in
+        //Gdx.input.getInputProcessor().
     }
 
     void generateTiles(int size) {
@@ -51,12 +51,16 @@ public class GameScreen extends ScreenAdapter {
         TextureComponent tileTexture = new TextureComponent();
         tileTexture.region = Textures.tile;
 
+        TextureComponent backTileTexture = new TextureComponent();
+        backTileTexture.region = Textures.backTile;
+
         float tilePlace = MainGame.VIRTUAL_WIDTH / size;
 
 
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 Entity tile = new Entity();
+                Entity backTile= new Entity();
 
                 PositionComponent tilePosition = new PositionComponent(Tiles.getPosition(i, j));
                 float scale = tilePlace * 0.8f / tileTexture.region.getRegionWidth();
@@ -67,7 +71,15 @@ public class GameScreen extends ScreenAdapter {
                 tile.add(tilePosition);
                 tile.add(tileIndex);
 
+                PositionComponent backTilePosition = new PositionComponent(tilePosition.center);
+                scale = tilePlace * 0.9f / tileTexture.region.getRegionWidth();
+                backTilePosition.scale.set(scale, scale);
+
+                backTile.add(backTilePosition);
+                backTile.add(backTileTexture);
+
                 engine.addEntity(tile);
+                engine.addEntity(backTile);
                 tiles[i][j] = tile;
             }
         }

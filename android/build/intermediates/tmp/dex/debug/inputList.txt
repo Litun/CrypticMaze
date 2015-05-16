@@ -3,7 +3,7 @@ D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-controller
 D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-controllers-android-1.5.6-3691c3a8ee410344f8fc15726fa71d731da39f81.jar
 D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\ashley-1.4.0-e86509c7ed1a3627b6936664f4be2f01ea69f997.jar
 D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\box2dlights-1.3-62ba9b6f07ac2c7abcfe31f5a13409f912ca102d.jar
-D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.5.6-5eee59b4137d55cb21bfc91b4e47ee9fbfe0f0ec.jar
 D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\core-1.0-98da8de2d4ea5e2070a037e93b06091f472ff7a1.jar
+D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.5.6-5eee59b4137d55cb21bfc91b4e47ee9fbfe0f0ec.jar
 D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.5.6-00d235b8e909ca779bb8682e8c628e0e451f757d.jar
 D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\gdx-1.5.6-e532cf2355f97fdb2820e68181a30f3e4407fd47.jar

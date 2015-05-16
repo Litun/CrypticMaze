@@ -2,7 +2,7 @@
 <resources>
     <!-- From: file:/D:/GitHub/CrypticMaze/android/res/values/strings.xml -->
     <eat-comment/>
-    <string name="app_name">cryptic_maze</string>
+    <string name="app_name">Cryptic Maze</string>
     <!-- From: file:/D:/GitHub/CrypticMaze/android/res/values/styles.xml -->
     <eat-comment/>
     <style name="GdxTheme" parent="android:Theme">

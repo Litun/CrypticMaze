@@ -26,7 +26,7 @@
         jar="D:\GitHub\CrypticMaze\core\build\libs\core-1.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a26dca1bad7565ea19769c801d144c5390f14ca6">
+        sha1="025ca11749cbdfda898d80888432b744254ae8c3">
         <dex dex="D:\GitHub\CrypticMaze\android\build\intermediates\pre-dexed\debug\core-1.0-98da8de2d4ea5e2070a037e93b06091f472ff7a1.jar" />
     </item>
     <item

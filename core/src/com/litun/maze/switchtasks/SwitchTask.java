@@ -10,7 +10,7 @@ public abstract class SwitchTask {
     protected static final float LARGE_SCALE = 0.4f,
             SMALL_SCALE = 0.2f;
     protected Entity bridge;
-    public boolean finished = true;
+    public boolean finished = false;
 
     public SwitchTask(Entity bridge) {
         this.bridge = bridge;

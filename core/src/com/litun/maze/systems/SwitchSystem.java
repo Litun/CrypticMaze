@@ -39,15 +39,18 @@ public class SwitchSystem extends EntitySystem {
 
     @Override
     public void update(float deltaTime) {
-        boolean finished = true;
-        for (SwitchTask task : tasks) {
-            if (!task.finished) {
-                task.update(deltaTime);
-                finished = false;
+        if (inProcess) {
+            boolean finished = true;
+            for (SwitchTask task : tasks) {
+                if (!task.finished) {
+                    task.update(deltaTime);
+                    finished = false;
+                }
             }
-        }
-        if (finished) {
-            tasks.clear();
+            if (finished) {
+                tasks.clear();
+                inProcess = false;
+            }
         }
     }
 
@@ -55,10 +58,10 @@ public class SwitchSystem extends EntitySystem {
         inProcess = true;
         for (Entity bridge : bridges) {
             BridgeComponent bridgeComponent = bridge.getComponent(BridgeComponent.class);
-            boolean nextDimentionExistence = bridgeComponent.direction == BridgeComponent.BridgeDirection.DOWN ?
+            boolean nextDimensionExistence = bridgeComponent.direction == BridgeComponent.BridgeDirection.DOWN ?
                     labyrinth.toDownNextDimention(bridgeComponent.i, bridgeComponent.j) :
                     labyrinth.toRightNextDimention(bridgeComponent.i, bridgeComponent.j);
-            SwitchTask task = SwitchTaskGetter.getTask(bridge, nextDimentionExistence);
+            SwitchTask task = SwitchTaskGetter.getTask(bridge, nextDimensionExistence);
             if (task != null)
                 tasks.add(task);
         }

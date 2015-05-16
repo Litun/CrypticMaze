@@ -17,18 +17,17 @@ public class SwitchTaskGetter {
             case DISAPPEAR:
                 if (!nextDimentionExistence)
                     task = new FromDisappearToNothingTask(bridge);
+                else
+                    task = new FromDisappearToAppearTask(bridge);
                 break;
-//                else
-//                    task = new FromDisappearToAppearTask(bridge);
-//                break;
-//            case NOTHING:
-//                if (nextDimentionExistence)
-//                    task = new FromNothingToAppearTask(bridge);
-//                break;
-//            case APPEAR:
-//                if (!nextDimentionExistence)
-//                    task = new FromAppearToDisappearTask(bridge);
-//                else task=new FromAppearToStayTask(bridge);
+            case NOTHING:
+                if (nextDimentionExistence)
+                    task = new FromNothingToAppearTask(bridge);
+                break;
+            case APPEAR:
+                if (!nextDimentionExistence)
+                    task = new FromAppearToDisappearTask(bridge);
+                else task=new FromAppearToStayTask(bridge);
         }
         return task;
     }

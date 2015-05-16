@@ -106,15 +106,18 @@ public class MoveTilesSystem extends EntitySystem {
 
     @Override
     public void update(float deltaTime) {
-        boolean finished = true;
-        for (MoveTask task : tasks) {
-            if (!task.isFinished()) {
-                task.update(deltaTime);
-                finished = false;
+        if(inProcess) {
+            boolean finished = true;
+            for (MoveTask task : tasks) {
+                if (!task.isFinished()) {
+                    task.update(deltaTime);
+                    finished = false;
+                }
             }
-        }
-        if (finished) {
-            tasks.clear();
+            if (finished) {
+                tasks.clear();
+                inProcess=false;
+            }
         }
     }
 }

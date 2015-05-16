@@ -48,12 +48,14 @@ public class GameScreen extends ScreenAdapter {
     }
 
     private void generateBridges(int size) {
-        TextureComponent bridgeTexture = new TextureComponent();
-        bridgeTexture.region = Textures.tile;
+
 
         float tilePlace = MainGame.VIRTUAL_WIDTH / size;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
+                TextureComponent bridgeTexture = new TextureComponent();
+                bridgeTexture.region = Textures.tile;
+
                 //bridge down
                 if (j > 0) {
                     Entity bridgeDown = new Entity();
@@ -74,6 +76,9 @@ public class GameScreen extends ScreenAdapter {
 
                     engine.addEntity(bridgeDown);
                 }
+
+                bridgeTexture = new TextureComponent();
+                bridgeTexture.region = Textures.tile;
 
                 //bridge right
                 if (i < 9) {

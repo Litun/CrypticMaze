@@ -67,6 +67,24 @@ public class SwitchSystem extends EntitySystem {
         }
     }
 
+    public void init() {
+        inProcess = true;
+        for (Entity bridge : bridges) {
+            BridgeComponent bridgeComponent = bridge.getComponent(BridgeComponent.class);
+            boolean down = bridgeComponent.direction == BridgeComponent.BridgeDirection.DOWN;
+            boolean currentDimensionExistence = down ?
+                    labyrinth.toDown(bridgeComponent.i, bridgeComponent.j) :
+                    labyrinth.toRight(bridgeComponent.i, bridgeComponent.j);
+            boolean nextDimensionExistence = down ?
+                    labyrinth.toDownNextDimention(bridgeComponent.i, bridgeComponent.j) :
+                    labyrinth.toRightNextDimention(bridgeComponent.i, bridgeComponent.j);
+            SwitchTask task = SwitchTaskGetter.getInitTask(bridge,
+                    currentDimensionExistence, nextDimensionExistence);
+            if (task != null)
+                tasks.add(task);
+        }
+    }
+
     public boolean goLeft() {
         return true;
     }

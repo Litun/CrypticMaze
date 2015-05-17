@@ -38,7 +38,9 @@ public class GameScreen extends ScreenAdapter {
 
         engine.addSystem(new InputSystem());
         engine.addSystem(new CharacterSystem(labyrinth));
-        engine.addSystem(new SwitchSystem(labyrinth));
+        SwitchSystem switchSystem = new SwitchSystem(labyrinth);
+        engine.addSystem(switchSystem);
+        switchSystem.init();
         MoveTilesSystem moveTilesSystem = new MoveTilesSystem(labyrinth);
         engine.addSystem(moveTilesSystem);
         moveTilesSystem.start();
@@ -48,25 +50,23 @@ public class GameScreen extends ScreenAdapter {
     }
 
     private void generateBridges(int size) {
-
-
         float tilePlace = MainGame.VIRTUAL_WIDTH / size;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                TextureComponent bridgeTexture = new TextureComponent();
-                bridgeTexture.region = Textures.tile;
-
                 //bridge down
                 if (j > 0) {
+                    TextureComponent bridgeTexture = new TextureComponent();
+                    bridgeTexture.region = Textures.tile;
+
                     Entity bridgeDown = new Entity();
 
                     BridgeComponent bridgeComponent = new BridgeComponent(i, j, BridgeComponent.BridgeDirection.DOWN);
-                    bridgeComponent.state = BridgeComponent.BridgeState.STAY;
+                    bridgeComponent.state = BridgeComponent.BridgeState.NOTHING;
 
                     PositionComponent bridgePosition = new PositionComponent(Tiles.getPosition(i, j));
                     bridgePosition.center.sub(0, tilePlace / 2, 1);
                     float scaleX = tilePlace / bridgeTexture.region.getRegionWidth(),
-                            scaleY = tilePlace * 0.4f / bridgeTexture.region.getRegionWidth();
+                            scaleY = 0;
                     bridgePosition.scale.set(scaleX, scaleY);
                     bridgePosition.rotation = 90f;
 
@@ -77,20 +77,21 @@ public class GameScreen extends ScreenAdapter {
                     engine.addEntity(bridgeDown);
                 }
 
-                bridgeTexture = new TextureComponent();
-                bridgeTexture.region = Textures.tile;
 
                 //bridge right
                 if (i < 9) {
+                    TextureComponent bridgeTexture = new TextureComponent();
+                    bridgeTexture.region = Textures.tile;
+
                     Entity bridgeRight = new Entity();
 
                     BridgeComponent bridgeComponent = new BridgeComponent(i, j, BridgeComponent.BridgeDirection.RIGHT);
-                    bridgeComponent.state = BridgeComponent.BridgeState.STAY;
+                    bridgeComponent.state = BridgeComponent.BridgeState.NOTHING;
 
                     PositionComponent bridgePosition = new PositionComponent(Tiles.getPosition(i, j));
                     bridgePosition.center.add(tilePlace / 2, 0, -1);
                     float scaleX = tilePlace / bridgeTexture.region.getRegionWidth(),
-                            scaleY = tilePlace * 0.4f / bridgeTexture.region.getRegionWidth();
+                            scaleY = 0;
                     bridgePosition.scale.set(scaleX, scaleY);
 
                     bridgeRight.add(bridgeTexture);
@@ -102,7 +103,6 @@ public class GameScreen extends ScreenAdapter {
             }
         }
     }
-
 
     void generateTiles(int size) {
         Entity[][] tiles = new Entity[size][size];

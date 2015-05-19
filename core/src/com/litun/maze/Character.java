@@ -18,7 +18,7 @@ public class Character {
     public static Entity getCharacter() {
         if (mainCharacter == null) {
             Entity character = new Entity();
-            MainTriangleComponent mainTriangleComponent=new MainTriangleComponent();
+            MainTriangleComponent mainTriangleComponent = new MainTriangleComponent();
             character.add(mainTriangleComponent);
 
             Vector2 pos = Tiles.getPosition(mainTriangleComponent.i, mainTriangleComponent.j);
@@ -34,6 +34,16 @@ public class Character {
             mainCharacter = character;
             return character;
         } else return mainCharacter;
+    }
+
+    public static void reset() {
+        MainTriangleComponent component = mainCharacter.getComponent(MainTriangleComponent.class);
+        component.i = 0;
+        component.j = 0;
+
+        Vector2 pos = Tiles.getPosition(0, 0);
+        PositionComponent position = mainCharacter.getComponent(PositionComponent.class);
+        position.center.set(pos.x, pos.y, 1);
     }
 
 }

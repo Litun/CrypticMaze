@@ -12,7 +12,7 @@ public class MyGestureListener implements GestureListener {
 
     Engine engine;
 
-    MyGestureListener(Engine engine) {
+    public MyGestureListener(Engine engine) {
         this.engine = engine;
     }
 
